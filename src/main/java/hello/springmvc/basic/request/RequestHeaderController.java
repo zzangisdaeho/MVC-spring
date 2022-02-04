@@ -11,7 +11,16 @@ import java.util.Locale;
 
 @Slf4j
 @RestController
+/**
+ * 참고
+ * > @Conroller 의 사용 가능한 파라미터 목록은 다음 공식 메뉴얼에서 확인할 수 있다.
+ * > https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-ann-arguments
+ * 참고
+ * > @Conroller 의 사용 가능한 응답 값 목록은 다음 공식 메뉴얼에서 확인할 수 있다.
+ * > https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-ann-return-types
+ */
 public class RequestHeaderController {
+
     @RequestMapping("/headers")
     public String headers(HttpServletRequest request,
                           HttpServletResponse response,
